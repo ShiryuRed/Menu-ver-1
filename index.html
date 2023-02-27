@@ -5,6 +5,9 @@
 	<title>Menú de Quesitlan</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="header-menu">
@@ -20,48 +23,48 @@
 	</header>
 	<main>
 		<section id="inicio">
-			<h2>Bienvenidos a Quesitlan</h2>
-			<p>En nuestro restaurante ofrecemos los mejores platillos de la comida tradicional mexicana.</p>
+			<h2 class="h2-title">Bienvenidos a  </h2>
+			<p>En nuestro restaurante ofrecemos ' '.</p>
 		</section>
 		<section id="menu">
-			<h2>Menú de Quesitlan</h2>
+			<h2>Menú</h2>
 			<h3>Platillos principales</h3>
-			<ul>
-				<li>
-					<img src="pozole.jpg" alt="Pozole">
+			<ul class="ul-menu-food">
+				<li class="li-menu-item">
+					<img class="img-menu-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnt0wOSNXar_hcWRJ40vnHleNqrxN5PSHRQ&usqp=CAU" alt="Pozole">
 					<h4>Pozole</h4>
 					<p>Un plato tradicional de México hecho con granos de maíz, carne de cerdo y chile.</p>
 				</li>
-				<li>
-					<img src="tacos.jpg" alt="Tacos de asada">
+				<li class="li-menu-item">
+					<img class="img-menu-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnt0wOSNXar_hcWRJ40vnHleNqrxN5PSHRQ&usqp=CAU" alt="Tacos de asada">
 					<h4>Tacos de asada</h4>
 					<p>Tacos hechos con carne asada, cilantro, cebolla y salsa.</p>
 				</li>
-				<li>
-					<img src="enchiladas.jpg" alt="Enchiladas suizas">
+				<li class="li-menu-item">
+					<img class="img-menu-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnt0wOSNXar_hcWRJ40vnHleNqrxN5PSHRQ&usqp=CAU" alt="Enchiladas suizas">
 					<h4>Enchiladas suizas</h4>
 					<p>Enchiladas bañadas en una salsa de tomate y chile, cubiertas de queso y gratinadas en el horno.</p>
 				</li>
-				<li>
-					<img src="tortas.jpg" alt="Tortas de camarón">
+				<li class="li-menu-item">
+					<img class="img-menu-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnt0wOSNXar_hcWRJ40vnHleNqrxN5PSHRQ&usqp=CAU" alt="Tortas de camarón">
 					<h4>Tortas de camarón</h4>
 					<p>Una torta de pan crujiente con camarones fritos, aguacate y salsa de chipotle.</p>
 				</li>
 			</ul>
 			<h3>Bebidas</h3>
 			<ul>
-				<li>
-					<img src="agua-jamaica.jpg" alt="Agua fresca de jamaica">
+				<li class="li-menu-item"> 
+					<img class="img-menu-item" src="agua-jamaica.jpg" alt="Agua fresca de jamaica">
 					<h4>Agua fresca de jamaica</h4>
 					<p>Una bebida refrescante hecha con flores de jamaica y endulzada con azúcar.</p>
 				</li>
-				<li>
-					<img src="https://via.placeholder.com/350x200.png?text=Plato+3" alt="Refresco de cola" onclick="abrirModal(this)">
+				<li class="li-menu-item">
+					<img class="img-menu-item" src="https://via.placeholder.com/350x200.png?text=Plato+3" alt="Refresco de cola" onclick="abrirModal(this)">
 					<h4>Refresco de cola</h4>
 					<p>Una bebida carbonatada y azucarada con sabor a cola.</p>
 				</li>
-				<li>
-					<img src="tequila.jpg" alt="Tequila reposado" onclick="abrirModal(this)">
+				<li class="li-menu-item">
+					<img class="img-menu-item" src="tequila.jpg" alt="Tequila reposado" onclick="abrirModal(this)">
 					<h4>Tequila reposado</h4>
 					<p>Un tequila añejado durante al menos dos meses en barricas de roble.</p>
 				</li>			
@@ -70,7 +73,7 @@
 	    <div id="modal">
 	      <div class="modal-fondo"></div> <!-- Fondo difuminado -->
 	      <span class="modal-cerrar" onclick="cerrarModal()">&times;</span> <!-- Botón para cerrar el modal -->
-	      <img id="modal-imagen" src="">
+	      <img class="img-menu-item" id="modal-imagen" src="">
 	    </div>
 		</section>
 		<section id="ubicacion">
