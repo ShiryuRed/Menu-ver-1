@@ -1,5 +1,6 @@
 * {
 	scroll-behavior: smooth;
+	font-size: 24px;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 	padding: 0;
 }
 
-header {
+.header-menu {
 	background-color: #000;
 	padding: 10px;
 	position: fixed;
@@ -18,14 +19,31 @@ header {
 	width: 100%;
 	z-index: 1;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.nav-header {
+	width: 100%;
+}
+.nav-ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 20px;
 }
 
 #inicio {
-	margin-top: 90px;
+	margin-top: 120px;
 }
 
-h1 {
-	margin: 0;
+.h1-title {
+	margin: 10px;
+	font-size: 40px;
 }
 
 nav ul {
