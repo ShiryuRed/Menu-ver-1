@@ -55,6 +55,10 @@ nav a {
 	gap: 30px;
 }
 
+.container-menu-comida {
+	margin: 30px 0;
+}
+
 .menu-info {
 	padding: 30px;
 }
@@ -69,6 +73,7 @@ nav a {
 	gap: 20px;
 }
 
+
 .li-menu-item {
 	background-color: #333;
 	border-radius: 10px;
@@ -80,8 +85,19 @@ nav a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
 }
 
+.menu-item-description {
+	margin: 20px 0;
+}
+
+.menu-item-price::before {
+	content: "$100";
+	font-size: 2em;
+	color: #efdfaf;
+	margin-top: -10px;
+}
 
 
 
