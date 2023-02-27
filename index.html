@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Menú de Quesitlan</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Quesitlan</h1>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#menu">Menú</a></li>
+				<li><a href="#ubicacion">Ubicación</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="inicio">
+			<h2>Bienvenidos a Quesitlan</h2>
+			<p>En nuestro restaurante ofrecemos los mejores platillos de la comida tradicional mexicana.</p>
+		</section>
+		<section id="menu">
+			<h2>Menú de Quesitlan</h2>
+			<h3>Platillos principales</h3>
+			<ul>
+				<li>
+					<img src="pozole.jpg" alt="Pozole">
+					<h4>Pozole</h4>
+					<p>Un plato tradicional de México hecho con granos de maíz, carne de cerdo y chile.</p>
+				</li>
+				<li>
+					<img src="tacos.jpg" alt="Tacos de asada">
+					<h4>Tacos de asada</h4>
+					<p>Tacos hechos con carne asada, cilantro, cebolla y salsa.</p>
+				</li>
+				<li>
+					<img src="enchiladas.jpg" alt="Enchiladas suizas">
+					<h4>Enchiladas suizas</h4>
+					<p>Enchiladas bañadas en una salsa de tomate y chile, cubiertas de queso y gratinadas en el horno.</p>
+				</li>
+				<li>
+					<img src="tortas.jpg" alt="Tortas de camarón">
+					<h4>Tortas de camarón</h4>
+					<p>Una torta de pan crujiente con camarones fritos, aguacate y salsa de chipotle.</p>
+				</li>
+			</ul>
+			<h3>Bebidas</h3>
+			<ul>
+				<li>
+					<img src="agua-jamaica.jpg" alt="Agua fresca de jamaica">
+					<h4>Agua fresca de jamaica</h4>
+					<p>Una bebida refrescante hecha con flores de jamaica y endulzada con azúcar.</p>
+				</li>
+				<li>
+					<img src="https://via.placeholder.com/350x200.png?text=Plato+3" alt="Refresco de cola" onclick="abrirModal(this)">
+					<h4>Refresco de cola</h4>
+					<p>Una bebida carbonatada y azucarada con sabor a cola.</p>
+				</li>
+				<li>
+					<img src="tequila.jpg" alt="Tequila reposado" onclick="abrirModal(this)">
+					<h4>Tequila reposado</h4>
+					<p>Un tequila añejado durante al menos dos meses en barricas de roble.</p>
+				</li>			
+			</ul>
+		<!-- Modal -->
+	    <div id="modal">
+	      <div class="modal-fondo"></div> <!-- Fondo difuminado -->
+	      <span class="modal-cerrar" onclick="cerrarModal()">&times;</span> <!-- Botón para cerrar el modal -->
+	      <img id="modal-imagen" src="">
+	    </div>
+		</section>
+		<section id="ubicacion">
+			<h2>Ubicación</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60210.67021124405!2d-99.13416523130848!3d19.43255639575304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4e4a4b7777%3A0x89436a7c13ba2ba1!2sZ%C3%B3calo%2C%20Centro%20Hist%C3%B3rico%20de%20la%20Ciudad%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1sen!2sus!4v1645100642044!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</section>
+		<section id="contacto">
+			<h2>Contacto</h2>
+			<p>Puedes contactarnos por teléfono al 555-555-5555 o por correo electrónico a info@quesitlan.com</p>
+		</section>
+	</main>
+    <script src="js/modal-script.js"></script>
+</body>
+</html>
+
+			

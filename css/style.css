@@ -1,0 +1,210 @@
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #252525;
+	color: #fff;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #000;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+#inicio {
+	margin-top: 90px;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	margin-top: 60px;
+}
+
+section {
+	margin: 50px auto;
+	max-width: 800px;
+	text-align: center;
+}
+
+section h2 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+section h3 {
+	font-size: 1.5em;
+	margin-top: 40px;
+}
+
+section ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section li {
+	background-color: #333;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	flex-basis: calc(25% - 20px);
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+section li img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+section li h4 {
+	margin: 0;
+}
+
+section li p {
+	margin-top: 0;
+}
+
+img {
+	cursor: pointer;
+}
+
+iframe {
+	border: 0;
+	height: 450px;
+	width: 500px;
+}
+	section#ubicacion iframe {
+		display: block;
+		margin: 0 auto;
+	}
+
+	section#contacto p {
+		font-size: 1.2em;
+	}
+
+	footer {
+		background-color: #000;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+	}
+
+	footer p {
+		margin: 0;
+	}
+
+
+      /* Estilo del modal */
+      #modal {
+        display: none; /* El modal se oculta por defecto */
+        position: fixed; /* Posición fija para cubrir toda la pantalla */
+        z-index: 1; /* El modal debe estar por encima de todo el contenido */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Para permitir el desplazamiento en pantallas pequeñas */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y semitransparente */
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Estilo de la imagen dentro del modal */
+      #modal-imagen {
+        display: block; /* Asegurar que la imagen se muestre como un bloque */
+        margin: 0 auto; /* Centrar la imagen horizontalmente */
+        max-width: 90%; /* Establecer el ancho máximo de la imagen */
+        max-height: 80%; /* Establecer la altura máxima de la imagen */
+      }
+      
+      /* Estilo del botón para cerrar el modal */
+      .modal-cerrar {
+        color: #fff; /* Color del botón */
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      /* Estilo del fondo difuminado */
+      .modal-fondo {
+        filter: blur(5px); /* Aplicar efecto de desenfoque */
+        -webkit-filter: blur(5px);
+        position: fixed;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y semitransparente */
+      }
+
+
+
+/* Elemento base */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Carril */
+::-webkit-scrollbar-track {
+  background: #29002b;
+  border-radius: 50px
+}
+ 
+/* Manejador */
+::-webkit-scrollbar-thumb {
+  background: #7b00ff;
+  border-radius: 50px;
+}
+
+/* Manejador hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f51d1;
+}
+
+	@media screen and (max-width: 768px) {
+		nav li {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		section li {
+			flex-basis: calc(50% - 20px);
+		}
+	}
+}
